@@ -10,7 +10,9 @@ Data compression is a basic component of a wide range of applications, and Huffm
 The basic idea of Huffman Encoding is to assign variable legth codewords to each of the input characters, and these lengths of the assigned codes are based on the frequencies of occurence of the corresponding character in the input text. Note that none of the prefix can be repeated amongst the codewords to avoid ambiguity in decoding. To encode an input text stream, we first build a frequency dictionary, and repeatedly select 2 minimum frequency symbols and merge them using a Min Heap Tree. Finally, the codeword can be assigned to characters by recursively traversing the tree and recording the path taken by the traversal.
 
 ![](images/huffmanencoding.png)
+
 (Image above is taken from [here](https://bhrigu.me/post/huffman-coding-python-implementation/))
+
 An example of this Huffman Encoding Tree is shown above. The value of a leaf node represents the frequency of occurence of the particular character in the input text; the value of an internal tree is the sum of all the values its subtree. Each branch of the tree takes on a bitcode of 0 or 1, and the code assigned to each character is the concat of all these bitcodes along the traversal path to the character node. For instance, the character a appears 3 times in the input text and is assigned a codeword 00, which has length 2; on the otherhand, the character d appears only 1 time in the input text and is hence assigned a longer codeword of 110, which has length 3.
 
 This problem might be apt for parallelism because we are usually working with huge sized inputs for compression/ decompression. Given that we have a huffman encoding tree, the encoding and decoding stage seems to be doing the same work for each character where we translate it to and from the codewords. Hence, we believe that this decoding application that we are going to implement will benefit from parallelism.
