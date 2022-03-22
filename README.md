@@ -1,5 +1,5 @@
 # 15618FinalProject
-## Parallel GREP (Joelle Lim, Srinidhi Kaushik)
+## Parallel Huffman Decoding (Joelle Lim, Srinidhi Kaushik)
 
 ### Summary
 We are going to parallelize Huffman decoding using CUDA, and if time is available, attempt to use the new gay array data structure to further enhance performance/
