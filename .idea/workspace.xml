@@ -27,7 +27,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d104bce9-c5d1-4b85-a51a-5f8ef440b6c9" name="Default Changelist" comment="" />
+    <list default="true" id="d104bce9-c5d1-4b85-a51a-5f8ef440b6c9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +43,29 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="jojo/first_try" />
+                    <option name="lastUsedInstant" value="1648676444" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1648676443" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectId" id="277S1vdisbqTFGyYaAorvPqEjF1" />
   <component name="ProjectViewState">
@@ -84,6 +109,9 @@
       <updated>1648669419648</updated>
       <workItem from="1648669420680" duration="937000" />
       <workItem from="1648675829040" duration="309000" />
+      <workItem from="1648676422552" duration="10188000" />
+      <workItem from="1648767084098" duration="6820000" />
+      <workItem from="1649191016661" duration="611000" />
     </task>
     <servers />
   </component>
@@ -107,9 +135,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="741" y="285" width="428" height="474" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1648670708002" />
-    <state x="1046" y="153" width="766" height="629" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1648669697817">
+    <state x="1044" y="81" width="766" height="629" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1648774095696">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1046" y="153" width="766" height="629" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1648669697817" />
+    <state x="1044" y="81" width="766" height="629" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1648774095696" />
+    <state x="168" y="81" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.3840.1080@0.0.3840.1080" timestamp="1648766450577" />
+    <state x="666" y="288" width="587" height="488" key="find.popup" timestamp="1648753429852">
+      <screen x="0" y="0" width="3840" height="1080" />
+    </state>
+    <state x="666" y="288" width="587" height="488" key="find.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1648753429852" />
   </component>
 </project>
