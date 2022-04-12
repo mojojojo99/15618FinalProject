@@ -74,7 +74,7 @@ We choose to use CUDA so that we can have more control over the block sizes and 
 ### Project Status Update:
 - We have finished writing a simple sequential version that creates the data structures and utility functions required for huffman encoding and decoding. For example, we need the huffman encoding tree to decode the encoded output. We have also attempted to write the parallel version of the decoding process, but are still adapting the utility functions to port them over to the CUDA platform and have to refactor our parallel decoding functions multiple times because of certain design decision changes on how we want to store the bit strings. 
 
-### Outlook for oals and Deliverables
+### Outlook for Goals and Deliverables
 - We feel like we are on track to produce the deliverables, but perhaps the stretch goals will take more time. The parallel algorithm we want to implement seems sufficiently complicated and should occupy us for the rest of the time left, and we foresee there to be quite some debugging to resolve correctness (off by one bit manipulation) issues and also some issues with regards to parallel programming -- there is a lot of synchronization issues to work on to make sure that the different blocks of threads are sync-ed up to the correct dedcoding information.
 
 ### Demo 
