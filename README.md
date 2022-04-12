@@ -2,7 +2,7 @@
 ## Parallel Huffman Decoding (Joelle Lim, Srinidhi Kaushik)
 
 ### Summary
-We are going to parallelize Huffman decoding using CUDA, and if time is available, attempt to use the new gay array data structure to further enhance performance/
+We are going to parallelize Huffman decoding using CUDA, and if time is available, attempt to use the new gap array data structure to further enhance performance.
 
 ### Background
 Data compression is a basic component of a wide range of applications, and Huffman coding is one of such lossless commpression techniques. Although the main intended purpose of compression is thought of as to save valuable storage, it plays another important role in increasing effective bandwidth to the said storage when incorporated into file systems. With the shift to data-intensive workloads and applications, the importance of being abe to conduct these compressions and decompression operations on-the-fly fast and efficiently is becoming more apparent. Hence, for this final project, we want to look into parallelizing the decoding part of this compression scheme.
@@ -46,7 +46,7 @@ To also test our algorithm, we found some good datasets that can be used like:
 - Run the algorithm on top of the regular GHC machiness.
 
 ##### 100%
-- Evaluate the performance of the parallel version of the HUffman decoding, in terms of perhaps throughput (decompression output throughput) and identify possible bottlenecks.
+- Evaluate the performance of the parallel version of the Huffman decoding, in terms of perhaps throughput (decompression output throughput) and identify possible bottlenecks.
 - Compare the performance of the sequential/ parallel version, and also possibly against the state of art zstandard cpu version of the decompression algorithm.
 - Experiment by varying the different varaibles in the algorithm like choice of the subsequence size (chunk-size), unit size, the type of data input (possibly deliberately varying the frequency or length before codewords exhibit the self sychronization properties) and seeing how they affect the end performance.
 
@@ -67,3 +67,18 @@ We choose to use CUDA so that we can have more control over the block sizes and 
 - 4/11 - 4/17: Continue implementation of the parallel algorithm and start the performance analysis when done. Also modify the parallel algorithm based on bottlenecks identified.
 - 4/17 - 4/24: Conduct the final analysis for the possibly improved parallel algorithm and benchmark against different datasets. Write Final report.
 - 4/24 - 4/28: Finish report and if time allows check out the gap array data structure.
+
+
+
+## Milestone Report
+### Project Status Update:
+- We have finished writing a simple sequential version that creates the data structures and utility functions required for huffman encoding and decoding. For example, we need the huffman encoding tree to decode the encoded output. We have also attempted to write the parallel version of the decoding process, but are still adapting the utility functions to port them over to the CUDA platform and have to refactor our parallel decoding functions multiple times because of certain design decision changes on how we want to store the bit strings. 
+
+### Outlook for oals and Deliverables
+- We feel like we are on track to produce the deliverables, but perhaps the stretch goals will take more time. The parallel algorithm we want to implement seems sufficiently complicated and should occupy us for the rest of the time left, and we foresee there to be quite some debugging to resolve correctness (off by one bit manipulation) issues and also some issues with regards to parallel programming -- there is a lot of synchronization issues to work on to make sure that the different blocks of threads are sync-ed up to the correct dedcoding information.
+
+### Demo 
+- We plan to show a demo of the encoding (sequential) and decoding (parallel) of our code. We will pull certain large datasets and show how the data gets encoded and decoded. We also intend to analyze the performance of our parallel algorithm with several graphs, varying certain factors like the block size. If possible, we would also like to compare the parallel algorithm's performance with certain state of art decoders. 
+
+### Preliminary Results
+- We do have very coarse timing results for the sequential versions of encoding and decoding but we will update the README when we have the parallel versions up for comparison. 
