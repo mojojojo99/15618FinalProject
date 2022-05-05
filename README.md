@@ -84,4 +84,4 @@ We choose to use CUDA so that we can have more control over the block sizes and 
 - We do have very coarse timing results for the sequential versions of encoding and decoding but we will update the README when we have the parallel versions up for comparison. 
 
 ## Final Report
-The full report, is a part of this reporsitory, and can be found at [report.pdf](https://github.com/mojojojo99/15618FinalProject/blob/main/report.pdf).
+The full report, is a part of this reporsitory, and can be found [here](https://github.com/mojojojo99/15618FinalProject/blob/main/report.pdf). The recorded video for the project presentation is available [here](https://github.com/mojojojo99/15618FinalProject/blob/main/rec.mp4).
